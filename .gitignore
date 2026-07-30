@@ -1,0 +1,81 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-*
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Xcode - 用户特定文件（不应入库）
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+
+# Xcode - 构建产物
+build/
+DerivedData/
+build/Build/Products/
+build/Build/Intermediates/
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+!default.pbxuser
+*.mp4
+*.mov
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode - patch
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.pins
+Package.resolved
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# CocoaPods (未使用，保留以防后续引入)
+Pods/
+*.xcworkspace/xcuserdata/
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# 临时/备份文件
+*.swp
+*.swo
+*~
+*.tmp
+*.bak
+*.log
+
+# 环境/密钥（项目使用 Keychain，源代码中通常不会包含，但保险起见）
+*.key
+*.pem
+*.p12
+*.cer
+.env
+.env.local
