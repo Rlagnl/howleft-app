@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="44" viewBox="0 0 42 44" fill="none">
+  <!-- HowLeft 菜单栏图标：HL 字母组合（H 的右竖笔与 L 的竖笔共享一条粗线，L 底部横条向右延伸）
+       单色 path，作为 macOS 菜单栏 template image，系统自动适配深浅色模式 -->
+  <g fill="#000" fill-opacity="1" fill-rule="nonzero">
+    <!-- H 左竖笔 -->
+    <rect x="4" y="8" width="7" height="28"/>
+    <!-- 共享竖笔（H 右竖 = L 竖笔） -->
+    <rect x="22" y="8" width="7" height="28"/>
+    <!-- H 横笔 -->
+    <rect x="4" y="22" width="25" height="7"/>
+    <!-- L 底部横条（向右延伸超出 H 宽度） -->
+    <rect x="22" y="29" width="16" height="7"/>
+  </g>
+</svg>
