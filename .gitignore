@@ -22,6 +22,7 @@ xcuserdata/
 
 # Xcode - 构建产物
 build/
+dist/
 DerivedData/
 build/Build/Products/
 build/Build/Intermediates/

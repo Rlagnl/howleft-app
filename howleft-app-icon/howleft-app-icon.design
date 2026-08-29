@@ -1,0 +1,225 @@
+{
+  "data": [
+    {
+      "id": "image-001",
+      "title": "方案一：余额环 + AI 星芒（已否定，像相机）",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788010897000,
+      "canvasData": {
+        "x": 0,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-balance-ring-spark.jpg"
+      }
+    },
+    {
+      "id": "image-002",
+      "title": "方案二：H 字母 + 进度弧（已否定，功能不明确）",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788010897000,
+      "canvasData": {
+        "x": 480,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-h-monogram-arc.jpg"
+      }
+    },
+    {
+      "id": "image-003",
+      "title": "方案三：余量液面 + 脉冲点（拟物，已迭代）",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788010897000,
+      "canvasData": {
+        "x": 960,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-liquid-level-pulse.jpg"
+      }
+    },
+    {
+      "id": "image-004",
+      "title": "方案四：扁平余量容器 + 监测波形",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788011800000,
+      "canvasData": {
+        "x": 1440,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-flat-container-pulse.jpg"
+      }
+    },
+    {
+      "id": "image-005",
+      "title": "方案五：扁平半圆仪表",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788011800000,
+      "canvasData": {
+        "x": 1920,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-flat-gauge.jpg"
+      }
+    },
+    {
+      "id": "image-006",
+      "title": "方案六：扁平余量信号条",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788011800000,
+      "canvasData": {
+        "x": 2400,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-flat-level-bars.jpg"
+      }
+    },
+    {
+      "id": "image-007",
+      "title": "方案七：单色射线刻度仪表",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788012600000,
+      "canvasData": {
+        "x": 2880,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-mono-ray-ticks.jpg"
+      }
+    },
+    {
+      "id": "image-008",
+      "title": "方案八：单色扇形信号射线",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788012600000,
+      "canvasData": {
+        "x": 3360,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-mono-signal-rays.jpg"
+      }
+    },
+    {
+      "id": "image-009",
+      "title": "方案九：单色余量环 + 射线指针",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788012600000,
+      "canvasData": {
+        "x": 3840,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-mono-ring-needle.jpg"
+      }
+    },
+    {
+      "id": "image-010",
+      "title": "方案十：HL 缎带折叠连体",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788013400000,
+      "canvasData": {
+        "x": 4320,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-hl-ribbon-fold.jpg"
+      }
+    },
+    {
+      "id": "image-011",
+      "title": "方案十一：HL 前后叠压",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788013400000,
+      "canvasData": {
+        "x": 4800,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-hl-stack.jpg"
+      }
+    },
+    {
+      "id": "image-012",
+      "title": "方案十二：HL 共享笔画 + 硬阴影",
+      "type": "image",
+      "version": 1,
+      "createdAt": 1788013400000,
+      "canvasData": {
+        "x": 5280,
+        "y": 0,
+        "naturalSize": {
+          "width": 1920,
+          "height": 1920
+        }
+      },
+      "devMetadata": {
+        "imageSrc": "assets/icon-hl-shared-shadow.jpg"
+      }
+    }
+  ],
+  "config": {
+    "autoLayout": true,
+    "deviceType": "freeSize",
+    "projectName": "HowLeft 应用图标"
+  }
+}

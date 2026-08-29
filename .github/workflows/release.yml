@@ -1,0 +1,65 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]        # 推送 v 开头的 tag 时触发发布
+  workflow_dispatch: {} # 支持手动触发（仅构建，不发布）
+
+permissions:
+  contents: write       # 创建 Release 和上传产物需要写权限
+
+jobs:
+  build:
+    name: Build DMG
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show environment
+        run: |
+          xcodebuild -version
+          sw_vers
+
+      # 防止 tag 与应用版本号不一致（例如 tag v1.0.2 但 Info.plist 还是 1.0.1）
+      - name: Verify tag matches app version
+        if: startsWith(github.ref, 'refs/tags/v')
+        run: |
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          PLIST_VERSION=$(/usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" HowLeft/Info.plist)
+          if [ "$TAG_VERSION" != "$PLIST_VERSION" ]; then
+            echo "::error::tag(${TAG_VERSION}) 与 Info.plist 版本(${PLIST_VERSION})不一致，请先更新 HowLeft/Info.plist 的 CFBundleShortVersionString"
+            exit 1
+          fi
+
+      - name: Build DMG
+        run: ./build-dmg.sh
+        # 未设置 CODESIGN_IDENTITY / NOTARY_PROFILE，走 ad-hoc 签名模式
+        # 之后若开通开发者账号，在 Secrets 中配置证书并在此处注入两个环境变量即可启用签名+公证
+
+      - name: Generate SHA-256 checksum
+        run: |
+          cd dist
+          shasum -a 256 *.dmg > checksums.txt
+          cat checksums.txt
+
+      # 手动触发时：产物存为 workflow artifact，方便测试打包流程
+      - name: Upload artifact
+        if: github.event_name == 'workflow_dispatch'
+        uses: actions/upload-artifact@v4
+        with:
+          name: HowLeft-dmg
+          path: dist/
+
+      # tag 触发时：创建 GitHub Release 并上传 DMG + 校验文件
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" \
+            dist/*.dmg \
+            dist/checksums.txt \
+            --title "HowLeft ${GITHUB_REF_NAME}" \
+            --generate-notes \
+            --notes "未签名版本（ad-hoc），首次打开需要放行，参见 README 安装章节。SHA-256 校验值见 checksums.txt。"

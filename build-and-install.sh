@@ -4,9 +4,9 @@
 
 set -e
 
-PROJECT="DeepSeekMonitor.xcodeproj"
-SCHEME="DeepSeekMonitor"
-APP_NAME="DeepSeekMonitor.app"
+PROJECT="HowLeft.xcodeproj"
+SCHEME="HowLeft"
+APP_NAME="HowLeft.app"
 
 echo "==> 编译 Release 版本..."
 xcodebuild -project "$PROJECT" -scheme "$SCHEME" -configuration Release build \
@@ -30,5 +30,5 @@ cp -R "$APP_PATH" "/Applications/"
 # 清理编译产物，避免项目目录下的 .app 被 Spotlight/Launchpad 索引导致重复显示
 rm -rf "./build"
 
-echo "==> 完成！可以从 Launchpad 或 Spotlight 启动 DeepSeekMonitor"
+echo "==> 完成！可以从 Launchpad 或 Spotlight 启动 HowLeft"
 echo "    路径: /Applications/$APP_NAME"

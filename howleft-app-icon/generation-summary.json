@@ -1,0 +1,47 @@
+{
+  "skill": "solo-graphic-generation",
+  "skillVersion": "2026.08.06.21.24.57",
+  "projectName": "HowLeft 应用图标",
+  "requestedSize": "1024×1024 方形",
+  "actualImageSize": "square_hd (1024×1024)",
+  "sizeConfirmedByUser": true,
+  "assetCount": 12,
+  "rounds": [
+    {
+      "round": 1,
+      "note": "拟物/渐变方向，用户反馈：方案一像相机、方案二功能不明确、方案三方向最接近但雷达脉冲不对且要求扁平极简",
+      "assets": [
+        { "filename": "icon-balance-ring-spark.jpg", "title": "方案一：余额环 + AI 星芒", "nodeId": "image-001", "status": "rejected" },
+        { "filename": "icon-h-monogram-arc.jpg", "title": "方案二：H 字母 + 进度弧", "nodeId": "image-002", "status": "rejected" },
+        { "filename": "icon-liquid-level-pulse.jpg", "title": "方案三：余量液面 + 脉冲点", "nodeId": "image-003", "status": "superseded" }
+      ]
+    },
+    {
+      "round": 2,
+      "note": "严格 2D 扁平极简，去拟物，强化余量+监控隐喻",
+      "assets": [
+        { "filename": "icon-flat-container-pulse.jpg", "title": "方案四：扁平余量容器 + 监测波形", "nodeId": "image-004", "intendedSize": "1024×1024", "status": "success" },
+        { "filename": "icon-flat-gauge.jpg", "title": "方案五：扁平半圆仪表", "nodeId": "image-005", "intendedSize": "1024×1024", "status": "success" },
+        { "filename": "icon-flat-level-bars.jpg", "title": "方案六：扁平余量信号条", "nodeId": "image-006", "intendedSize": "1024×1024", "status": "success" }
+      ]
+    },
+    {
+      "round": 3,
+      "note": "用户反馈：保留扁平，主视觉改为黑白灰单色，用极简线条表现射线与余量",
+      "assets": [
+        { "filename": "icon-mono-ray-ticks.jpg", "title": "方案七：单色射线刻度仪表", "nodeId": "image-007", "intendedSize": "1024×1024", "status": "success" },
+        { "filename": "icon-mono-signal-rays.jpg", "title": "方案八：单色扇形信号射线", "nodeId": "image-008", "intendedSize": "1024×1024", "status": "success" },
+        { "filename": "icon-mono-ring-needle.jpg", "title": "方案九：单色余量环 + 射线指针", "nodeId": "image-009", "intendedSize": "1024×1024", "status": "success" }
+      ]
+    },
+    {
+      "round": 4,
+      "note": "用户调整：白底、黑色 H/L 字母图形、灰色强调阴影与细节，参考 Netflix 图标语言",
+      "assets": [
+        { "filename": "icon-hl-ribbon-fold.jpg", "title": "方案十：HL 缎带折叠连体", "nodeId": "image-010", "intendedSize": "1024×1024", "status": "success" },
+        { "filename": "icon-hl-stack.jpg", "title": "方案十一：HL 前后叠压", "nodeId": "image-011", "intendedSize": "1024×1024", "status": "success" },
+        { "filename": "icon-hl-shared-shadow.jpg", "title": "方案十二：HL 共享笔画 + 硬阴影", "nodeId": "image-012", "intendedSize": "1024×1024", "status": "success" }
+      ]
+    }
+  ]
+}
